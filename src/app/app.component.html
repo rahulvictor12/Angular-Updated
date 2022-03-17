@@ -1,0 +1,50 @@
+<img src="assets/RMS logo.png" id="image" class="center" />
+
+<nav class="navbar bg-dark navbar-dark">
+  <a class="navbar-brand text-white">&nbsp; Retail Management Portal</a>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <button
+        routerLink="Product"
+        class="m-1 btn btn-danger my-2 my-sm-0"
+        Button
+      >
+        Product
+      </button>
+      <button
+        routerLink="Vendor"
+        class="m-1 btn btn-danger my-2 my-sm-0"
+        Button
+      >
+        Vendor
+      </button>
+      <button routerLink="Cart" class="m-1 btn btn-danger my-2 my-sm-0" Button>
+        Cart
+      </button>
+      <button
+        routerLink="Wishlist"
+        class="m-1 btn btn-danger my-2 my-sm-0"
+        Button
+      >
+        Wishlist
+      </button>
+      <button
+        routerLink="login"
+        class="m-1 btn btn-danger my-2 my-sm-0"
+        Button
+        (click)="onLogout()"
+      >
+        Logout
+      </button>
+    </li>
+  </ul>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+<br />
+<div class="footer-container" id="footer">
+  <mat-toolbar>
+    <span> <h3>Copyright &copy; 2020 RETAIL MANAGEMENT SYSTEM</h3></span>
+  </mat-toolbar>
+</div>

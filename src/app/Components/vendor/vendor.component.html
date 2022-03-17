@@ -1,0 +1,91 @@
+<br />
+<h1
+  class="text-center display-1"
+  style="
+    font: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  "
+>
+  VENDOR DETAILS
+</h1>
+
+<!-- Button trigger modal
+
+<p>vendor works!</p>
+
+<button type="button" class="btn btn-primary float-right m-2" data-bs-toggle="modal" data-bs-target="#exampleModal"
+(click)="addClick()" data-backdrop="static" data-keyboard="false">
+   Add Vendors
+  </button>
+  
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">{{ModalTitle}}</h5>
+          <button type="button" class="btn-close" 
+          data-bs-dismiss="modal" aria-label="Close" (click)="closeClick()">
+        <span area-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+          <app-addvendor [vendor]="vendor" *ngIf="ActivateaddvendorComp">
+              
+          </app-addvendor>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ -->
+<br />
+<table mat-table [dataSource]="VendorList" class="mat-elevation-z8 demo-table">
+  &nbsp;
+  <ng-container matColumnDef="Id">
+    <th mat-header-cell *matHeaderCellDef>Id</th>
+    <td mat-cell *matCellDef="let vendor">{{ vendor.id }}</td>
+  </ng-container>
+  <mat-divider [vertical]="true"></mat-divider>
+  &nbsp;
+  <ng-container matColumnDef="Name">
+    <th mat-header-cell *matHeaderCellDef>Name</th>
+    <td mat-cell *matCellDef="let vendor">{{ vendor.name }}</td>
+  </ng-container>
+  <mat-divider [vertical]="true"></mat-divider>
+  &nbsp; &nbsp; &nbsp;
+  <ng-container matColumnDef="Delivery Charge">
+    <th mat-header-cell *matHeaderCellDef>Delivery Charge</th>
+    <td mat-cell *matCellDef="let vendor">{{ vendor.deliveryCharge }}</td>
+  </ng-container>
+  <mat-divider [vertical]="true"></mat-divider>
+  &nbsp;
+  <ng-container matColumnDef="Rating">
+    <th mat-header-cell *matHeaderCellDef>Rating /5</th>
+    <td mat-cell *matCellDef="let vendor">{{ vendor.rating }}</td>
+  </ng-container>
+  <mat-divider [vertical]="true"></mat-divider>
+
+  &nbsp;
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
